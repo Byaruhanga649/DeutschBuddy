@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DeutschBuddy helps you learn German vocabulary and improve your German skills.">
+    <title>DeutschBuddy | Learn German</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <div class="navbar">
+            <div class="logo">DeutschBuddy 🇩🇪</div>
+
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="vocabulary.html">Vocabulary</a></li>
+                    <li><a href="#dictionary">Dictionary</a></li>
+                    <li><a href="#practice">Practice</a></li>
+                    <li><a href="#favorites">Favorites</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Home Section -->
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <p class="welcome">WILLKOMMEN! (WELCOME!)</p>
+
+                <h1>Learn German the <span>Easy Way.</span></h1>
+
+                <p>
+                    Your friendly companion for learning German.
+                    Build vocabulary, discover new words, and practice
+                    your German skills every day.
+                </p>
+
+                <a href="#features" class="btn">Start Learning</a>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features">
+
+            <h2>Explore DeutschBuddy</h2>
+
+            <p class="section-description">
+                Everything you need to make learning German easier.
+            </p>
+
+            <div class="feature-container">
+
+                <article class="feature-card">
+                    <div class="feature-icon">📚</div>
+                    <h3>Vocabulary</h3>
+                    <p>Discover German words and their English meanings.</p>
+                    <a href="vocabulary.html">Learn Words</a>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon">🔍</div>
+                    <h3>Dictionary</h3>
+                    <p>Search for German words and learn their meanings.</p>
+                    <a href="#dictionary">Search Words</a>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Practice</h3>
+                    <p>Test your knowledge with simple German questions.</p>
+                    <a href="#practice">Start Practice</a>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon">⭐</div>
+                    <h3>Favorites</h3>
+                    <p>Keep your favourite German words in one place.</p>
+                    <a href="#favorites">View Favorites</a>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Dictionary Section -->
+        <section class="dictionary-section" id="dictionary">
+
+            <h2>German Dictionary</h2>
+
+            <p>Search for a German word to discover its meaning.</p>
+
+            <form id="dictionary-form">
+                <input
+                    type="text"
+                    id="word-input"
+                    placeholder="Enter a German word..."
+                    required
+                >
+
+                <button type="submit">Search</button>
+            </form>
+
+            <div id="dictionary-result">
+                <p>Your dictionary results will appear here.</p>
+            </div>
+
+        </section>
+
+        <!-- Practice Section -->
+        <section class="features practice-section" id="practice">
+
+            <h2>German Practice</h2>
+
+            <p class="section-description">
+                Test what you know by answering a simple question.
+            </p>
+
+            <div class="feature-card">
+                <h3>What does "Danke" mean?</h3>
+
+                <div id="quiz-options">
+                    <button type="button" class="quiz-option" data-answer="wrong">Hello</button>
+                    <button type="button" class="quiz-option" data-answer="correct">Thank you</button>
+                    <button type="button" class="quiz-option" data-answer="wrong">Goodbye</button>
+                </div>
+
+                <p id="quiz-result">Choose your answer.</p>
+            </div>
+
+        </section>
+
+        <!-- Favorites Section -->
+        <section class="features favorites-section" id="favorites">
+
+            <h2>My Favorite Words</h2>
+
+            <p class="section-description">
+                Your saved German words will appear here.
+            </p>
+
+            <div id="favorites-list" class="vocabulary-container">
+                <p>You have not saved any words yet.</p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 DeutschBuddy. Learn German one word at a time.</p>
+    </footer>
+
+</body>
+</html>
